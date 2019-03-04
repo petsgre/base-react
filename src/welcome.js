@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import util from './util'
 class Welcome extends Component {
   constructor(props){
     super(props);
@@ -11,12 +11,13 @@ class Welcome extends Component {
     console.log(a);
   }
   componentDidMount() {
+    console.log(util);
     console.log('元素挂载了');
     this.showName()
     console.log(this.props.name);
   }
   render() {
-    return <h1>Hello, {this.my}</h1>;
+    return <h1>Hello, {this.my +', '+ this.props.name}</h1>;
   }
 }
 

@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Welcome from './welcome'
+// function Welcome(props) {
+//   return <h1>Hello, {props.name}</h1>;
+// }
 
 class App extends Component {
   render() {
@@ -9,7 +13,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Edit <code>src/App.js</code> and save to reload1.
           </p>
           <a
             className="App-link"
@@ -19,6 +23,7 @@ class App extends Component {
           >
             Learn React
           </a>
+          <Welcome name="Sara" />
         </header>
       </div>
     );
